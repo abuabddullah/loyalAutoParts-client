@@ -44,13 +44,10 @@ const Footer = () => {
                                 <Link to="/" className="text-gray-600 hover:text-gray-800">About our items</Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-gray-600 hover:text-gray-800">Second Link</Link>
+                                <Link to="/" className="text-gray-600 hover:text-gray-800">Customers</Link>
                             </li>
                             <li>
-                                <Link to="/" className="text-gray-600 hover:text-gray-800">Third Link</Link>
-                            </li>
-                            <li>
-                                <Link to="/" className="text-gray-600 hover:text-gray-800">Fourth Link</Link>
+                                <Link to="/" className="text-gray-600 hover:text-gray-800">Reviews</Link>
                             </li>
                         </nav>
                     </div>
