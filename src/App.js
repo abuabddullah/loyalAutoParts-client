@@ -2,21 +2,22 @@ import './App.css';
 import { Route, Routes } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Home from './pages/homePage/Home';
+import NavMenus from './pages/shared/NavMenus/NavMenus';
+import Footer from './pages/shared/Footer';
 
 function App() {
   return (
     <div className="App">
-      <button class="btn btn-primary">Button</button>
-      <button class="btn btn-secondary">Button</button>
-      <button class="btn btn-accent">Button</button>
-      <Routes>
-        {/* <Route path="/" element={<Home />} />
-      <Route path="/" element={<Home />} /> */}
-        {/* <Route path="*" element={<NotFound />} /> */}
-      </Routes>
-
-
-
+      <NavMenus>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Routes>
+      </NavMenus>
+      <Footer />
 
       {/* <ToastContainer /> */}
       <ToastContainer
