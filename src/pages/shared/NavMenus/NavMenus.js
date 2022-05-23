@@ -10,7 +10,7 @@ const NavMenus = ({ children }) => {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* <!-- Navbar --> */}
-                <header className="navbar sticky top-0 bg-white border-b-2">
+                <header className="navbar z-50 sticky top-0 bg-white border-b-2 overflow-hidden">
                     <div className="container mx-auto">
                         <div className="flex-1 px-2 mx-2">
                             <img
@@ -34,7 +34,7 @@ const NavMenus = ({ children }) => {
             </div>
             <nav className="drawer-side">
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                <ul className="menu p-4 overflow-y-auto w-80 bg-base-100">
+                <ul className="menu p-4 overflow-y-auto w-64 bg-base-100">
                     <Menues />
                 </ul>
 

@@ -1,0 +1,92 @@
+[
+    {
+      "_id": "628a761042224a2b4a76d223",
+      "name": "Cars-Auxiliaries",
+      "image": "https://i.ibb.co/hm1Rv5x/Cars-Auxiliaries.jpg",
+      "description": "Vehicle auxiliary gear capacity any manual, mechanical, and electrical machine powered by way of the engine of the motor car to which it is mounted, attached, or utilized from or by a separate engine or motor, that enables the motor car or such devices to function, and includes, without limitation, trimmers, saws.\r\n",
+      "minQty": 39,
+      "availableQty": 26,
+      "price": 100
+    },
+    {
+      "_id": "628a7610946719cba83ede7b",
+      "name": "Cars-Axile",
+      "image": "https://i.ibb.co/2KtPvWW/Cars-Axile.jpg",
+      "description": "An axle is a rod or shaft that connects a pair of wheels to propel them and preserve the position of the wheels to one another. In a car, the engine applies the pressure to the axle which rotates the wheels and strikes the automobile forward. In different words, axles deliver the using strength from the engine to the wheels.\r\n",
+      "minQty": 40,
+      "availableQty": 39,
+      "price": 100
+    },
+    {
+      "_id": "628a76105a3d7338485578c3",
+      "name": "Cars-Body",
+      "image": "https://i.ibb.co/ZXSrNQh/CarsBody.jpg",
+      "description": "The car body ought to be the main supporting shape or its unique element. The Vehicle Body of a cutting-edge auto consists of an engine section, saloon, trunk. The automobile physique is the major assisting shape of a vehicle, to which all different aspects are attached. The truck uses a separate frame as chassis.\r\n",
+      "minQty": 30,
+      "availableQty": 38,
+      "price": 100
+    },
+    {
+      "_id": "628a76105f062cacf9ef4c1f",
+      "name": "Cars-Bracking",
+      "image": "https://i.ibb.co/cxyL5vZ/Cars-Bracking.jpg",
+      "description": "There are two kinds of carrier brakes, or the brakes that stop your car while driving: disc and drum brakes. Additionally, nearly all automobiles come with emergency brakes and anti-lock brakes.\r\n",
+      "minQty": 38,
+      "availableQty": 34,
+      "price": 100
+    },
+    {
+      "_id": "628a7610dab497d604402793",
+      "name": "Cars-Chassis",
+      "image": "https://i.ibb.co/j6mhxKs/Cars-Chassis.jpg",
+      "description": "Chassis for a automobile is analogous to the skeleton for a human body. Chassis, also acknowledged as 'Frame', is the foundation structure of any automobile that supports it from underneath. The reason of the chassis is to undergo the weight of the automobile in its idle and dynamic states.\r\n",
+      "minQty": 32,
+      "availableQty": 20,
+      "price": 100
+    },
+    {
+      "_id": "628a7610744027e06bb7d49f",
+      "name": "Cars-Clutch",
+      "image": "https://i.ibb.co/DgnbHdP/Cars-Clutch.jpg",
+      "description": "The grab is the phase of the car which connects two or more rotating shafts. In a manual transmission car, the seize controls the connection between the shaft coming from the engine and the shafts which turn the wheels.\r\n",
+      "minQty": 22,
+      "availableQty": 39,
+      "price": 100
+    },
+    {
+      "_id": "628a7610744027e06bb7d49f",
+      "name": "Cars-Differential",
+      "image": "https://i.ibb.co/CVpKnL1/Cars-Differential.jpg",
+      "description": "The differential is a gadget of gears that approves unique power wheels (the wheels to which strength is delivered from the engine) on the equal axle to rotate at different speeds, such as when the automobile is turning.\r\n",
+      "minQty": 22,
+      "availableQty": 39,
+      "price": 100
+    },
+    {
+      "_id": "628a7610744027e06bb7d49f",
+      "name": "Cars-Engine",
+      "image": "https://i.ibb.co/jyb0mYR/Cars-Engine.jpg",
+      "description": "Car engines are built around the cylinders, which are sealed metal tubes with a spark plug and two valves on one side, and a crankshaft on the different.\r\n",
+      "minQty": 22,
+      "availableQty": 39,
+      "price": 100
+    },
+    {
+      "_id": "628a7610744027e06bb7d49f",
+      "name": "Cars-Gearings",
+      "image": "https://i.ibb.co/3cXTsC3/Cars-Gearings.jpg",
+      "description": "Similarly, in a car, gears transmit electricity from the crankshaft (the rotating axle that takes energy from the engine) to the driveshaft jogging underneath the automobile that in the end powers the wheels.\r\n",
+      "minQty": 22,
+      "availableQty": 39,
+      "price": 100
+    },
+    {
+      "_id": "628a7610744027e06bb7d49f",
+      "name": "Cars-Steering",
+      "image": "https://i.ibb.co/F7XhRYp/Cars-Steering.jpg",
+      "description": "The steerage machine converts the rotation of the guidance wheel into a swivelling movement of the street wheels in such a way that the steering-wheel rim turns a long way to go the avenue wheels a brief way. The system lets in a driver to use only mild forces to steer a heavy car.\r\n",
+      "minQty": 22,
+      "availableQty": 39,
+      "price": 100
+    }
+  ]

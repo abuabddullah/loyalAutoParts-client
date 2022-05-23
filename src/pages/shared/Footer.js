@@ -55,13 +55,13 @@ const Footer = () => {
                         <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm mb-3">SUBSCRIBE</h2>
                         <div className="flex xl:flex-nowrap md:flex-nowrap lg:flex-wrap flex-wrap justify-center items-end md:justify-start">
                             <div className="relative w-40 sm:w-auto xl:mr-4 lg:mr-0 sm:mr-4 mr-2">
-                                <label htmlFor="footer-field" className="leading-7 text-sm text-gray-600">Loyal Cars</label>
-                                <input type="text" id="footer-field" name="footer-field" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-secondary focus:border-secondary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                                <label htmlFor="footer-field" className="leading-7 text-sm text-gray-600">Loyal Auto Parts</label>
+                                <input type="text" id="footer-field" name="footer-field" className="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:bg-transparent focus:ring-2 focus:ring-primary focus:border-primary text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
                             </div>
-                            <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-secondary border-0 py-2 px-6 focus:outline-none hover:bg-sky-400 rounded">Subscribe</button>
+                            <button className="lg:mt-2 xl:mt-0 flex-shrink-0 inline-flex text-white bg-primary border-0 py-2 px-6 focus:outline-none hover:bg-green-500 rounded">Subscribe</button>
                         </div>
                         <p className="text-gray-500 text-sm mt-2 md:text-left text-center">Ride loyalti of your car
-                            <br className="lg:block hidden" /> with <strong className='text-secondary'> Loyal Cars</strong>
+                            <br className="lg:block hidden" /> with <strong className='text-secondary'> Loyal Auto Parts</strong>
                         </p>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ const Footer = () => {
                         <img src={logo} alt="" 
                         className="w-28 text-white p-2 bg-primary-500 rounded-full"
                          />
-                        <span className="ml-3 text-xl">Loyal Cars</span>
+                        <span className="ml-3 text-xl">Loyal Auto Parts</span>
                     </Link>
                     <p className="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© {(new Date().getFullYear())}  || All rights reserved —
                         <Link to="/" href="https://linkedin/in/asifaowadud" rel="noopener noreferrer" className="text-gray-600 ml-1" target="_blank">@asifaowadud</Link>

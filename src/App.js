@@ -5,6 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Home from './pages/homePage/Home';
 import NavMenus from './pages/shared/NavMenus/NavMenus';
 import Footer from './pages/shared/Footer';
+import NotFound from './pages/shared/NotFound';
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
           <Route path="/" element={<Home />} />
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </NavMenus>
       <Footer />
