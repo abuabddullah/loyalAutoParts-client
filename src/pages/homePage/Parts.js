@@ -8,7 +8,7 @@ const Parts = () => {
 
     // GET all availble non booked services by useQuery
     const { isLoading, error, data: parts, refetch } = useQuery(['parts'], () =>
-        fetch(`http://localhost:5000/parts`)
+        fetch(`https://stark-chamber-79715.herokuapp.com/parts`)
             .then(res =>
                 res.json()
             )
