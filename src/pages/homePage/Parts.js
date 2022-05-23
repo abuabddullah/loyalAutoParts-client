@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import Loading from '../shared/Loading/Loading';
 
 const Parts = () => {
-const navigate = useNavigate()
+    const navigate = useNavigate()
 
     // GET all availble non booked services by useQuery
     const { isLoading, error, data: parts, refetch } = useQuery(['parts'], () =>
@@ -17,11 +17,11 @@ const navigate = useNavigate()
     if (isLoading) {
         return <Loading />
     }
-    
+
 
     return (
-        <section>
-            <div className="container py-12 mx-auto">
+        <section className='bg-secondary py-12'>
+            <div className="container py-8 md:p-12 mx-auto bg-white">
                 <h2 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-secondary text-center">Parts : {parts?.length}</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-0">
                     <div className="card glass md:scale-50 hover:md:scale-100 md:translate-x-28 hover:md:translate-x-0 transition-all mb-8 md:mb-0 rounded-lg">
@@ -34,8 +34,8 @@ const navigate = useNavigate()
                             <h2 className='text-2xl font-bold'>Min Order Qty : {parts[0]?.minQty}</h2>
                             <div className="card-actions justify-end">
                                 <button
-                                onClick={() => navigate(`/purchase/${parts[0]?.id}`)}
-                                 className="btn btn-primary text-white">Purchase !</button>
+                                    onClick={() => navigate(`/purchase/${parts[0]?.id}`)}
+                                    className="btn btn-primary text-white">Purchase !</button>
                             </div>
                         </div>
                     </div>
@@ -49,8 +49,8 @@ const navigate = useNavigate()
                             <h2 className='text-2xl font-bold'>Min Order Qty : {parts[1]?.minQty}</h2>
                             <div className="card-actions justify-end">
                                 <button
-                                onClick={() => navigate(`/purchase/${parts[1]?.id}`)}
-                                 className="btn btn-primary text-white">Purchase !</button>
+                                    onClick={() => navigate(`/purchase/${parts[1]?.id}`)}
+                                    className="btn btn-primary text-white">Purchase !</button>
                             </div>
                         </div>
                     </div>
@@ -63,12 +63,15 @@ const navigate = useNavigate()
                             <h2 className='text-2xl font-bold'>Price : ${parts[2]?.price}</h2>
                             <h2 className='text-2xl font-bold'>Min Order Qty : {parts[2]?.minQty}</h2>
                             <div className="card-actions justify-end">
-                                <button 
-                                onClick={() => navigate(`/purchase/${parts[2]?.id}`)}
-                                className="btn btn-primary text-white">Purchase !</button>
+                                <button
+                                    onClick={() => navigate(`/purchase/${parts[2]?.id}`)}
+                                    className="btn btn-primary text-white">Purchase !</button>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div className='text-center mt-12'>
+                    <button class="btn btn-wide btn-primary text-white">See All Parts →</button>
                 </div>
             </div>
         </section>

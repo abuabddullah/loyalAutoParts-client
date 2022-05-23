@@ -15,8 +15,6 @@ const Home = () => {
             <Reviews />
             <Location />
             <Team />
-
-
         </section>
     );
 };

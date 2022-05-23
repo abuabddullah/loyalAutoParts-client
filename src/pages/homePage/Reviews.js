@@ -5,17 +5,17 @@ const Reviews = () => {
         <section className="text-gray-600 body-font">
             <div className="container px-5 py-24 mx-auto">
                 <div className="flex flex-col text-center w-full mb-20">
-                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-secondary">Reviews</h1>
-                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Reflectio of our customer's satisfactions.</p>
+                    <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-secondary">Latest Reviews : 5</h1>
+                    <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Reflection of our customer's satisfactions.</p>
                 </div>
                 <div className=" -m-4 text-center">
 
 
                     <div className="flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-8">
                         <div className="w-1/3 flex items-center justify-center">
-                            <img 
-                            className='object-cover rounded-full w-24 h-24'
-                            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
+                            <img
+                                className='object-cover rounded-full w-24 h-24'
+                                src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
                         </div>
 
                         <div className="w-2/3 p-4 md:p-4">
@@ -50,9 +50,9 @@ const Reviews = () => {
 
                     <div className="flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-8">
                         <div className="w-1/3 flex items-center justify-center">
-                            <img 
-                            className='object-cover rounded-full w-24 h-24'
-                            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
+                            <img
+                                className='object-cover rounded-full w-24 h-24'
+                                src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
                         </div>
 
                         <div className="w-2/3 p-4 md:p-4">
@@ -87,9 +87,9 @@ const Reviews = () => {
 
                     <div className="flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-8">
                         <div className="w-1/3 flex items-center justify-center">
-                            <img 
-                            className='object-cover rounded-full w-24 h-24'
-                            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
+                            <img
+                                className='object-cover rounded-full w-24 h-24'
+                                src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
                         </div>
 
                         <div className="w-2/3 p-4 md:p-4">
@@ -124,9 +124,9 @@ const Reviews = () => {
 
                     <div className="flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-8">
                         <div className="w-1/3 flex items-center justify-center">
-                            <img 
-                            className='object-cover rounded-full w-24 h-24'
-                            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
+                            <img
+                                className='object-cover rounded-full w-24 h-24'
+                                src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
                         </div>
 
                         <div className="w-2/3 p-4 md:p-4">
@@ -161,9 +161,9 @@ const Reviews = () => {
 
                     <div className="flex max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800 mb-8">
                         <div className="w-1/3 flex items-center justify-center">
-                            <img 
-                            className='object-cover rounded-full w-24 h-24'
-                            src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
+                            <img
+                                className='object-cover rounded-full w-24 h-24'
+                                src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" alt="" />
                         </div>
 
                         <div className="w-2/3 p-4 md:p-4">
@@ -195,6 +195,10 @@ const Reviews = () => {
                         </div>
                     </div>
 
+                </div>
+
+                <div className='text-center mt-12'>
+                    <button class="btn btn-wide btn-primary text-white">See All Reviews →</button>
                 </div>
             </div>
         </section>
