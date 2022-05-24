@@ -71,7 +71,7 @@ const Parts = () => {
                     </div>
                 </div>
                 <div className='text-center mt-12'>
-                    <button class="btn btn-wide btn-primary text-white">See All Parts →</button>
+                    <button className="btn btn-wide btn-primary text-white">See All Parts →</button>
                 </div>
             </div>
         </section>

@@ -6,6 +6,7 @@ import Home from './pages/homePage/Home';
 import NavMenus from './pages/shared/NavMenus/NavMenus';
 import Footer from './pages/shared/Footer';
 import NotFound from './pages/shared/NotFound';
+import Login from './pages/logRegProtect/Login';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/home" element={<Home />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </NavMenus>

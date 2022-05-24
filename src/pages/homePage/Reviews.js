@@ -198,7 +198,7 @@ const Reviews = () => {
                 </div>
 
                 <div className='text-center mt-12'>
-                    <button class="btn btn-wide btn-primary text-white">See All Reviews →</button>
+                    <button className="btn btn-wide btn-primary text-white">See All Reviews →</button>
                 </div>
             </div>
         </section>

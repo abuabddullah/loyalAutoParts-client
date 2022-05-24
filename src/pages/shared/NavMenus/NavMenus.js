@@ -1,7 +1,7 @@
 import React from 'react';
 import Menues from './Menues';
 import logo from './../../../assets/logoIcons/Loyal Cars-logos_black.png'
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const NavMenus = ({ children }) => {
     const navigate = useNavigate();
