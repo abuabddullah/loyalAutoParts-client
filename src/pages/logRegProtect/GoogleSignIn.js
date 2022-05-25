@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useSignInWithGoogle } from 'react-firebase-hooks/auth';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -6,26 +6,33 @@ import auth from '../../firebase.init';
 import Loading from '../shared/Loading/Loading';
 import createAccessToken from '../utillity/createAccessToken';
 
-const GoogleSignIn = ({setIsError}) => {
+const GoogleSignIn = ({ setIsError }) => {
     const navigate = useNavigate()
     let location = useLocation();
     let from = location.state?.from?.pathname || "/";
 
     const [signInWithGoogle, user, loading, error] = useSignInWithGoogle(auth);
 
+    // control error
+    useEffect(() => {
+        if (error) {
+            let message = error?.message;
+            setIsError(message);
+            toast.error(message, { id: 'G-error' });
+        }
+    }, [error, setIsError]);
+
+    // control user
+    useEffect(() => {
+        if (user) {
+            const { email } = user?.user;
+            createAccessToken(email);
+            navigate(from, { replace: true });
+        }
+    }, [user, setIsError, from, navigate]);
+
     if (loading) {
         return <Loading />
-    }
-    if (user) {
-        const { email } = user?.user;
-        console.log('email', email);
-        createAccessToken(email);
-        // navigate(from, { replace: true });
-    }
-
-    if (error) {
-        setIsError(error.message);
-        toast.error(error.message, { id: 'error' });
     }
 
     return (

@@ -15,8 +15,8 @@ const Menues = () => {
     return (
         <>
             <li><NavLink to="/home" className="rounded-md">Home</NavLink></li>
+            <li><NavLink to="/allParts" className="rounded-md">All Parts</NavLink></li>
             <li><NavLink to="/blogs" className="rounded-md">Blogs</NavLink></li>
-            {/* <li><NavLink to="/login" className="rounded-md">Login</NavLink></li> */}
             <li><NavLink to="/contact" className="rounded-md">Contact</NavLink></li>
             <li><NavLink to="/about" className="rounded-md">About</NavLink></li>
             {

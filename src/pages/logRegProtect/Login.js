@@ -80,21 +80,25 @@ const Login = () => {
     // control error
     useEffect(() => {
         if (error || regError || resetError) {
-            let message = error.message || regError.message || resetError.message;
+            let message = error?.message || regError?.message || resetError?.message;
             setIsError(message);
+            setIsAgreed(false);
             toast.error(message, { id: 'error' });
         }
     }, [error, regError, resetError]);
 
-    if (loading) {
-        return <Loading />
-    }
+    // control user
+    useEffect(() => {
+        if (user || regUser) {
+            const { email } = regUser?.user || user?.user || {};
+            console.log('email', email);
+            createAccessToken(email);
+            navigate(from, { replace: true });
+        }
+    }, [user, regUser, setIsError, from, navigate]);
 
-    if (user || regUser) {
-        const {email} = regUser?.user || user?.user || {};
-        console.log('email', email);
-        createAccessToken(email);
-        navigate(from, { replace: true });
+    if (loading || regLoading) {
+        return <Loading />
     }
 
 
@@ -103,7 +107,7 @@ const Login = () => {
             <div className="p-8 lg:w-1/2 mx-auto">
 
                 <GoogleSignIn
-                setIsError={setIsError}
+                    setIsError={setIsError}
                 />
 
                 <div className="bg-gray-100 rounded-b-lg py-12 px-4 lg:px-24">
@@ -254,12 +258,12 @@ const Login = () => {
                         }
 
 
-                        {
-                            isError ? <p className="pb-4 text-secondary text-center"><code>{isError}</code></p> : ""
-                        }
-
-
                     </form>
+
+
+                    {
+                        isError ? <p className="pb-4 text-red-600 text-center"><code>{isError}</code></p> : ""
+                    }
 
 
                     {/* to toggle register and login form */}
