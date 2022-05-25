@@ -1,9 +1,9 @@
 import React from 'react';
 import { useQuery } from 'react-query';
 
-const useAllParts = (intervalMs) => {
-    const { isLoading, error, data, refetch } = useQuery(['allParts', intervalMs], () =>
-        fetch(`https://stark-chamber-79715.herokuapp.com/parts`)
+const useAllReviews = (intervalMs) => {
+    const { isLoading, error, data, refetch } = useQuery(['allReviews', intervalMs], () =>
+        fetch(`https://stark-chamber-79715.herokuapp.com/reviews`)
             .then(res =>
                 res.json()
             ),
@@ -15,4 +15,4 @@ const useAllParts = (intervalMs) => {
     return { isLoading, error, data, refetch }
 };
 
-export default useAllParts;
+export default useAllReviews;

@@ -64,25 +64,37 @@ import Login from './pages/logRegProtect/Login';
 import Purchase from './pages/purchasePage/Purchase';
 import RequireAuth from './pages/logRegProtect/RequireAuth';
 import AllParts from './pages/allPartsPage/AllParts';
+import DashBoard from './pages/dashBoardPages/DashBoard';
+import MyProfile from './pages/dashBoardPages/MyProfile';
+import UpadateProfile from './pages/dashBoardPages/UpadateProfile';
+import MyOrders from './pages/dashBoardPages/MyOrders';
+import MyPayment from './pages/dashBoardPages/MyPayment';
+import MyReview from './pages/dashBoardPages/MyReview';
 
 function App() {
   return (
     <div className="App">
-      <NavMenus/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/allParts" element={<AllParts />} />
-          <Route path="/purchase/:id" element={
-            <RequireAuth>
-              <Purchase />
-            </RequireAuth>
-          } />
-          {/* <Route path="/purchase/:id" element={<Purchase />} /> */}
-          <Route path="/login" element={<Login />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      
+      <NavMenus />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/allParts" element={<AllParts />} />
+        <Route path="/purchase/:id" element={
+          <RequireAuth>
+            <Purchase />
+          </RequireAuth>
+        } />
+        <Route path="/dashBoard" element={<RequireAuth><DashBoard /></RequireAuth>} >
+          <Route index element={<MyProfile />} />
+          <Route path="upadateProfile" element={<UpadateProfile />} />
+          <Route path="myOrders" element={<MyOrders />} />
+          <Route path='payment/:_id' element={<MyPayment />} />
+          <Route path='myReview' element={<MyReview />} />
+        </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
+
       <Footer />
 
       {/* <ToastContainer /> */}
