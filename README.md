@@ -1,28 +1,31 @@
-# Welcome to **Thirsty Drinks**
+# Welcome to **Loyal Auto Parts**
 
-Project Repo Link(Frontend): [https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-abuabddullah](https://github.com/ProgrammingHeroWC4/warehouse-management-client-side-abuabddullah) \
-Live Site link(Frontend): [https://thirstydrinks-11.web.app/](https://thirstydrinks-11.web.app/) 
+Project Repo Link(Frontend): [https://github.com/programming-hero-web-course1/manufacturer-website-client-side-abuabddullah](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-abuabddullah) \
+Live Site link(Frontend): [https://loyalcars12.web.app/](https://loyalcars12.web.app/) 
 
-Project Repo Link(Backend): [https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-abuabddullah](https://github.com/ProgrammingHeroWC4/warehouse-management-server-side-abuabddullah) \
-Live Site link(Backend): [https://still-citadel-40412.herokuapp.com/](https://still-citadel-40412.herokuapp.com/) 
+Project Repo Link(Backend): [https://github.com/programming-hero-web-course1/manufacturer-website-server-side-abuabddullah](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-abuabddullah) \
+Live Site link(Backend): [https://stark-chamber-79715.herokuapp.com/](https://stark-chamber-79715.herokuapp.com/) 
 
 Stack over-flow link : [https://stackoverflow.com/questions/72079374/how-to-get-star-rating-review-from-user-to-mogodb-and-again-get-it-in-ui-by-reac](https://stackoverflow.com/questions/72079374/how-to-get-star-rating-review-from-user-to-mogodb-and-again-get-it-in-ui-by-reac)  
 
 
 
 ## What to Submit for the assignment:
-* **লাইভ ওয়েবসাইট এর লিংক of "firebase frontend deploy" and "heroku backend deploy"**
-* **ক্লায়েন্ট সাইড এর কোড এর গিটহাব লিংক of "frontend deploy"**
-* **সার্ভার সাইড এর কোড এর গিটহাব লিংক of "backend deploy"**
-* **স্ট্যাকওভারফ্লো ওয়েবসাইট এর প্রশ্ন/উত্তর এর লিংক বা গিটহাব ইস্যু এর লিঙ্ক**
+* **১. তোমার লাইভ ওয়েবসাইট এর লিংক। [ তুমি চাইলে ক্লায়েন্ট সাইড আগের মতো ফায়ারবেজ এ হোষ্ট করবে। কোন কারণে firebase এ ডেপ্লয় না হলে তুমি netlify তে ডেপ্লয় করতে পারো। সেক্ষেত্রে auth এর রিডাইরেক্ট url টা কিন্তু আপডেট করে নিতে হবে এবং সার্ভার হোস্ট করবে heroku তে। এবং ক্লায়েন্ট সাইড এ কোন ফেইক ডাটা ইউজ করা যাবে না। ]**
+* **২. তোমার ক্লায়েন্ট সাইড এর কোড এর গিটহাব লিংক**
+* **৩. তোমার সার্ভার সাইড এর কোড এর গিটহাব লিংক।**
+* **৪. তোমার ওয়েবসাইট এর এডমিন এমন একটা ইমেইল আর সেই ইমেইল এর পাসওয়ার্ড**
 
 
 ## Website's different features and functionality (Projects summary):
-* **To know about application of fullStack web development in a project.**
-* **To know about NodeJS, ExpressJS, MongoDB atlas**
-* **To know about the CRUD operation for posting,getting,editing,deleting data from database**
-* **To know about JWT i.e. Json Web Token**
-* **To know about how JWT is used for generating token which  could be used for CRUD operation**
+* Complete Manufacturer website to take order and
+purchasing products
+* Payment assuring by using credit cards successful payment confirmation
+* A Dashboard for Authorizing administrative power,
+tracking order, customer's review and many more through
+Protected route
+* Ration website and showing as star in UI
+* CRUD operations
 
 
 

@@ -18,7 +18,7 @@ const Menues = () => {
             <li><NavLink to="/allParts" className="rounded-md">All Parts</NavLink></li>
             <li><NavLink to="/blogs" className="rounded-md">Blogs</NavLink></li>
             <li><NavLink to="/contact" className="rounded-md">Contact</NavLink></li>
-            <li><NavLink to="/about" className="rounded-md">About</NavLink></li>
+            <li><NavLink to="/portfolio" className="rounded-md">Port Folio</NavLink></li>
             {
                 user && <>
                     <li><NavLink to="/dashBoard" className="rounded-md">Dashboard</NavLink></li>

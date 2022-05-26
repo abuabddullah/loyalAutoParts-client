@@ -15,99 +15,112 @@ const Blogs = () => {
                             <div className="py-8 flex flex-wrap md:flex-nowrap">
                                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
                                     <span className="font-semibold title-font text-primary">14.1 How will you improve the performance of a React Application?</span>
-                                    <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                                    <span className="mt-1 text-gray-500 text-sm">26 May 2022</span>
                                 </div>
                                 <div className="md:flex-grow">
-                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                                    <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                                    <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
+                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2"> improve the performance of a React Application</h2>
+                                    <p className="leading-relaxed">By keeping component state local <br />
+
+                                        use lazyloading for images <br />
+
+                                        use memorization technique also to prevent unnecessary re-renders</p>
                                 </div>
                             </div>
+
+                        </div>
+
+                        <div className="-my-8 divide-y-2 divide-gray-100">
                             <div className="py-8 flex flex-wrap md:flex-nowrap">
                                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                    <span className="font-semibold title-font text-primary">14.1 How will you improve the performance of a React Application?</span>
-                                    <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                                    <span className="font-semibold title-font text-primary">14.2 What are the different ways to manage a state in a React application?</span>
+                                    <span className="mt-1 text-gray-500 text-sm">26 May 2022</span>
                                 </div>
                                 <div className="md:flex-grow">
-                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                                    <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                                    <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
+                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2"> different ways to manage a state in a React</h2>
+                                    <p className="leading-relaxed">we have four kinds of state in react
+                                        local state : Local state is the data that we manage on one or the other component.
+                                        <br /><br />
+                                        Global state : The global state is the data that we manage across multiple elements.
+                                        <br /><br />
+                                        Server state :
+                                        <br /><br />
+                                        url state : useHistory or UseLocation used  To manage URL states
+                                        <br /><br />
+                                        all these can mange by different hooks
+                                        <br /><br />
+                                        useState : Server states and React Query
+                                        <br /><br />
+                                        UseEffect  : Server states and React Query
+                                        <br /><br />
+                                        useReducer : we  use useReducer  To manage global states &  local states
+                                        <br /><br />
+                                        useCallback,
+                                        useContext etc.
+                                    </p>
                                 </div>
                             </div>
+
+                        </div>
+
+                        <div className="-my-8 divide-y-2 divide-gray-100">
                             <div className="py-8 flex flex-wrap md:flex-nowrap">
                                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                    <span className="font-semibold title-font text-primary">14.1 How will you improve the performance of a React Application?</span>
-                                    <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                                    <span className="font-semibold title-font text-primary">14.3 How does prototypical inheritance work?</span>
+                                    <span className="mt-1 text-gray-500 text-sm">26 May 2022</span>
                                 </div>
                                 <div className="md:flex-grow">
-                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                                    <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                                    <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
+                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2"> prototypical inheritance</h2>
+                                    <p className="leading-relaxed">prototypical inheritance is the process of accessing an object's properties by another object.  it is used to add methods and features to objects by which an object can inherit the properties and methods of another object
+                                    </p>
                                 </div>
                             </div>
+
+                        </div>
+
+                        <div className="-my-8 divide-y-2 divide-gray-100">
                             <div className="py-8 flex flex-wrap md:flex-nowrap">
                                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                    <span className="font-semibold title-font text-primary">14.1 How will you improve the performance of a React Application?</span>
-                                    <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                                    <span className="font-semibold title-font text-primary">14.4 Why you do not set the state directly in React. For example, if you have const [products, setProducts] = useState([]). Why you do not set products = [...] instead, you use the setProducts</span>
+                                    <span className="mt-1 text-gray-500 text-sm">26 May 2022</span>
                                 </div>
                                 <div className="md:flex-grow">
-                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Bitters hashtag waistcoat fashion axe chia unicorn</h2>
-                                    <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                                    <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
+                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2"> not set the state directly in React</h2>
+                                    <p className="leading-relaxed">it will show us an error & will break our app  because doing so will not change the value of the state immediately it will replace the value instantly without causing other component re-render
+                                    </p>
                                 </div>
                             </div>
+
+                        </div>
+
+                        <div className="-my-8 divide-y-2 divide-gray-100">
                             <div className="py-8 flex flex-wrap md:flex-nowrap">
                                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                    <span className="font-semibold title-font text-gray-700">CATEGORY</span>
-                                    <span className="mt-1 text-gray-500 text-sm">12 Jun 2019</span>
+                                    <span className="font-semibold title-font text-primary">14.5 You have an array of products. Each product has a name, price, description, etc. How will you implement a search to find products by name?</span>
+                                    <span className="mt-1 text-gray-500 text-sm">26 May 2022</span>
                                 </div>
                                 <div className="md:flex-grow">
-                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Meditation bushwick direct trade taxidermy shaman</h2>
-                                    <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                                    <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
+                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">implement a search to find products by name</h2>
+                                    <p className="leading-relaxed">code : const result = arrOfProducts.filter(product => product.name === "keyword")
+                                    </p>
                                 </div>
                             </div>
+
+                        </div>
+
+                        <div className="-my-8 divide-y-2 divide-gray-100">
                             <div className="py-8 flex flex-wrap md:flex-nowrap">
                                 <div className="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                                    <span className="font-semibold title-font text-gray-700">CATEGORY</span>
-                                    <span className="text-sm text-gray-500">12 Jun 2019</span>
+                                    <span className="font-semibold title-font text-primary">14.6 What is a unit test? Why should write unit tests?</span>
+                                    <span className="mt-1 text-gray-500 text-sm">26 May 2022</span>
                                 </div>
                                 <div className="md:flex-grow">
-                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2">Woke master cleanse drinking vinegar salvia</h2>
-                                    <p className="leading-relaxed">Glossier echo park pug, church-key sartorial biodiesel vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf moon party messenger bag selfies, poke vaporware kombucha lumbersexual pork belly polaroid hoodie portland craft beer.</p>
-                                    <a className="text-indigo-500 inline-flex items-center mt-4">Learn More
-                                        <svg className="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                                            <path d="M5 12h14"></path>
-                                            <path d="M12 5l7 7-7 7"></path>
-                                        </svg>
-                                    </a>
+                                    <h2 className="text-2xl font-medium text-gray-900 title-font mb-2"> unit test? Why</h2>
+                                    <p className="leading-relaxed">software development process
+                                        In this process an application is broken apart into small tastable parts called units where each and every units are independently and individually tested to fix bugs and errors Unit testing ensures that all code meets quality standards before it's deployed. this is the why
+                                    </p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
                 </section>

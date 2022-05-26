@@ -28,6 +28,7 @@ import ManageAdmins from './pages/dashBoardPages/ManageAdmins';
 import ManageProducts from './pages/dashBoardPages/ManageProducts';
 import UpadatePart from './pages/dashBoardPages/UpadatePart';
 import Blogs from './pages/blogsPages/Blogs';
+import Portfolio from './pages/PortfolioPage/Portfolio';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/allParts" element={<AllParts />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/purchase/:id" element={
           <RequireAuth>
             <Purchase />

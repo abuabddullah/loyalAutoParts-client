@@ -53,13 +53,7 @@ const CheckoutForm = ({ order }) => {
             card,
         });
 
-        // if (error) {
-        //   console.log('[error]', error);
-        //     setCardError(error.message);
-        // } else {
-        //     setCardError('');
-        //   console.log('[PaymentMethod]', paymentMethod);
-        // }
+        
 
 
 

@@ -83,8 +83,6 @@ const Purchase = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
     const onSubmit = (data) => {
         const orderInfo = { ...data, ...orderQtyPriceInfo };
-        // console.log(orderInfo);
-        // console.log(finalAvailableQty);
 
 
         // add newest order to orders collection or update order price and qty if old order exists
@@ -105,8 +103,6 @@ const Purchase = () => {
                     console.log(`Your order has been placed successfully.`)
                     // reset form
                     reset()
-                    // redirect to previous page
-                    // navigate(from)
                 }
             })
             .catch(err => {
@@ -132,8 +128,6 @@ const Purchase = () => {
                     toast.success(`Your order has been placed successfully.`)
                     // reset form
                     reset()
-                    // redirect to previous page
-                    // navigate(from)
                 }
             })
             .catch(err => {

@@ -138,7 +138,6 @@ const UpadatePart = () => {
                             className="py-2 px-4 bg-primary text-white rounded hover:bg-green-600 active:bg-green-700 disabled:opacity-50">Order</button>
 
                         <button
-                            // onClick={() => navigate(from, { replace: true })}
                             onClick={()=>reset()}
                             className="py-2 px-4 bg-white border border-gray-200 text-gray-600 rounded hover:bg-gray-100 active:bg-gray-200 disabled:opacity-50">Cancel</button>
                     </div>

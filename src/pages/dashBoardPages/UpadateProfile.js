@@ -7,7 +7,6 @@ import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import Loading from '../shared/Loading/Loading';
 
-// const {email,displayName,photoURL,phoneNumber,education,location,linkedin} =  user || {};
 
 const UpadateProfile = () => {
 

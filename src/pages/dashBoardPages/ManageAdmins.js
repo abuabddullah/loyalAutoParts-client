@@ -34,14 +34,10 @@ const ManageAdmins = () => {
             .then(res => res.json())
             .then(data => {
                 console.log(data);
-                // setAdmin(data.admin);
-                // setAdminLoading(false);
                 refetch();
             })
             .catch(err => {
                 console.log(err);
-                // setAdmin(false);
-                // setAdminLoading(false);
                 refetch();
             })
 
