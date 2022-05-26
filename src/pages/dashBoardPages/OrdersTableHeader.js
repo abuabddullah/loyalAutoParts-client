@@ -7,9 +7,8 @@ const OrdersTableHeader = () => {
         <th>Name</th>
         <th>Email</th>
         <th>Order Quantity</th>
-        <th>Part ID</th>
+        <th>Cost</th>
         <th>Part Name</th>
-        <th>Part Image</th>
         <th>Payment Status</th>
         </>
     );

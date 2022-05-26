@@ -67,6 +67,21 @@ import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import Loading from '../shared/Loading/Loading';
+import { loadStripe } from '@stripe/stripe-js';
+import {
+  CardElement,
+  Elements,
+  useStripe,
+  useElements,
+} from '@stripe/react-stripe-js';
+import CheckoutForm from './CheckoutForm';
+
+
+
+
+const stripePromise = loadStripe('pk_test_51L0mz8C4IDVrgcznLbqLXXayVFuiBQhNv7ouT1ZJjcOqjQTXzqDrYklOGJ956Ure0V1KHUekdi7Hz4TweBSmQdNb00LFLHFL41');
+
+
 
 const MyPayment = () => {
     const { _id } = useParams();
@@ -107,9 +122,9 @@ const MyPayment = () => {
 
 
 
-                                {/* <Elements stripe={stripePromise}>
+                                <Elements stripe={stripePromise}>
                                     <CheckoutForm order={order} />
-                                </Elements> */}
+                                </Elements>
 
 
 

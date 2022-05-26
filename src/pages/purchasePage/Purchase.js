@@ -76,7 +76,6 @@ const Purchase = () => {
         partName: name,
         partImage: image,
         partDescription: description,
-        paid : false,
     }
 
 

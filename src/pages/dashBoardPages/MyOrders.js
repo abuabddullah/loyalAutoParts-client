@@ -47,10 +47,12 @@ const MyOrders = () => {
                                     <td>{order?.email}</td>
                                     <td>{order?.orderQty}</td>
                                     <td>{order?.totalPrice}</td>
-                                    <td>{order?.partId}</td>
                                     <td>{order?.partName}</td>
                                     <td>
-                                    <Link to={`/dashBoard/payment/${order?._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>
+                                    {
+                                        (order?.totalPrice && !order?.paid) && <Link to={`/dashBoard/payment/${order?._id}`}><button className='btn btn-xs btn-success'>Pay</button></Link>
+                                    }
+                                    {(order?.totalPrice && order.paid) && <span className='text-success'>Paid</span>}
                                     </td>
                                 </tr>
                             )
