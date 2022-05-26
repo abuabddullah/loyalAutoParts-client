@@ -64,7 +64,7 @@ console.log(user);
             >
                 <div className="mt-8 space-y-6">
                     <div>
-                        <label for="name" className="text-sm text-gray-700 block mb-1 font-medium">Name</label>
+                        <label htmlFor="name" className="text-sm text-gray-700 block mb-1 font-medium">Name</label>
                         <input
                             type="text"
                             id="name"
@@ -76,7 +76,7 @@ console.log(user);
                         />
                     </div>
                     <div>
-                        <label for="email" className="text-sm text-gray-700 block mb-1 font-medium">Email Adress</label>
+                        <label htmlFor="email" className="text-sm text-gray-700 block mb-1 font-medium">Email Adress</label>
                         <input
                             type="text"
                             id="email"
@@ -88,7 +88,7 @@ console.log(user);
                         />
                     </div>
                     <div>
-                        <label for="photoURL" className="text-sm text-gray-700 block mb-1 font-medium">Photo Url</label>
+                        <label htmlFor="photoURL" className="text-sm text-gray-700 block mb-1 font-medium">Photo Url</label>
                         <input
                             type="text"
                             id="photoURL"
@@ -107,7 +107,7 @@ console.log(user);
                         </label>
                     </div>
                     <div>
-                        <label for="address" className="text-sm text-gray-700 block mb-1 font-medium">Address</label>
+                        <label htmlFor="address" className="text-sm text-gray-700 block mb-1 font-medium">Address</label>
                         <input
                             type="text"
                             id="address"
@@ -125,7 +125,7 @@ console.log(user);
                         </label>
                     </div>
                     <div>
-                        <label for="phone" className="text-sm text-gray-700 block mb-1 font-medium">Phone</label>
+                        <label htmlFor="phone" className="text-sm text-gray-700 block mb-1 font-medium">Phone</label>
                         <input
                             type="text"
                             id="phone"
@@ -144,7 +144,7 @@ console.log(user);
                         </label>
                     </div>
                     <div>
-                        <label for="education" className="text-sm text-gray-700 block mb-1 font-medium">Education</label>
+                        <label htmlFor="education" className="text-sm text-gray-700 block mb-1 font-medium">Education</label>
                         <input
                             type="text"
                             id="education"
@@ -154,7 +154,7 @@ console.log(user);
                         />
                     </div>
                     <div>
-                        <label for="linkedin" className="text-sm text-gray-700 block mb-1 font-medium">Linkedin</label>
+                        <label htmlFor="linkedin" className="text-sm text-gray-700 block mb-1 font-medium">Linkedin</label>
                         <input
                             type="text"
                             id="linkedin"

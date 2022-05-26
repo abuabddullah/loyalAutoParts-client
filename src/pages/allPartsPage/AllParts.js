@@ -13,6 +13,11 @@ const AllParts = () => {
         return <Loading />
     }
 
+    if (error || !allParts) {
+        <Loading />
+        refetch()
+    }
+    refetch()
 
     return (
 

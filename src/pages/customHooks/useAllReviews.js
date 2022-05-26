@@ -7,10 +7,10 @@ const useAllReviews = (intervalMs) => {
             .then(res =>
                 res.json()
             ),
-        {
-            // Refetch the data every second
-            refetchInterval: intervalMs,
-        }
+        // {
+        //     // Refetch the data every second
+        //     refetchInterval: intervalMs,
+        // }
     )
     return { isLoading, error, data, refetch }
 };

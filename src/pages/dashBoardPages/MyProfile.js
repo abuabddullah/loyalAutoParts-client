@@ -3,13 +3,16 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { useQuery } from 'react-query';
 import { Link, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+import useAdmin from '../customHooks/useAdmin';
+import Loading from '../shared/Loading/Loading';
 
 const MyProfile = () => {
     const [user, loading, userError] = useAuthState(auth);
+    const [admin, setAdmin, adminLoading, setAdminLoading] = useAdmin(user);
     const email = user?.email;
     // GET all availble non booked services by useQuery
     const [intervalMs, setIntervalMs] = useState(1000)
-    const { isLoading, error, data: userMember, refetch } = useQuery(['allParts', intervalMs], () =>
+    const { isLoading, error, data: userMember, refetch } = useQuery(['allmembers', intervalMs], () =>
         fetch(`https://stark-chamber-79715.herokuapp.com/members/${email}`, {
             method: 'GET',
             headers: {
@@ -28,6 +31,15 @@ const MyProfile = () => {
 
     const { role, address, education, linkedin, name, phone, photoURL } = userMember || {};
     const navigate = useNavigate();
+
+    if (loading || adminLoading) {
+        return <Loading/>
+    }
+
+    if (userError || error) {
+        refetch()
+    }
+
     return (
         <>
             <div className="flex flex-col text-center w-full my-8">
@@ -38,15 +50,15 @@ const MyProfile = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3">
                         <div className="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
                             <div>
-                                <p className="font-bold text-gray-700 text-xl">22</p>
+                                <p className="font-bold text-gray-700 text-xl">Y</p>
                                 <p className="text-gray-400">Regular</p>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-700 text-xl">10</p>
-                                <p className="text-gray-400">Customer</p>
+                                <p className="font-bold text-gray-700 text-xl">{admin ? "Y":"N"}</p>
+                                <p className="text-gray-400">{admin ? "Admin":"Customer"}</p>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-700 text-xl">89</p>
+                                <p className="font-bold text-gray-700 text-xl">N</p>
                                 <p className="text-gray-400">Comments</p>
                             </div>
                         </div>
@@ -54,7 +66,7 @@ const MyProfile = () => {
                             <div className="w-48 h-48 bg-indigo-100 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500">
                                 <img
                                     className="h-24 w-24 rounded-full"
-                                    src={photoURL || user?.photoURL} alt="" />
+                                    src={photoURL || user?.photoURL || "https://bit.ly/3sYYL8x"} alt="" />
 
                             </div>
                         </div>

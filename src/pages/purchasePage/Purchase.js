@@ -201,7 +201,7 @@ const Purchase = () => {
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-600">Plese provide info bellow . . .</h1>
                         <div className="mt-8 space-y-6">
                             <div>
-                                <label for="name" className="text-sm text-gray-700 block mb-1 font-medium">Name</label>
+                                <label htmlFor="name" className="text-sm text-gray-700 block mb-1 font-medium">Name</label>
                                 <input
                                     type="text"
                                     id="name"
@@ -213,7 +213,7 @@ const Purchase = () => {
                                 />
                             </div>
                             <div>
-                                <label for="email" className="text-sm text-gray-700 block mb-1 font-medium">Email Adress</label>
+                                <label htmlFor="email" className="text-sm text-gray-700 block mb-1 font-medium">Email Adress</label>
                                 <input
                                     type="text"
                                     id="email"
@@ -225,7 +225,7 @@ const Purchase = () => {
                                 />
                             </div>
                             <div>
-                                <label for="address" className="text-sm text-gray-700 block mb-1 font-medium">Address</label>
+                                <label htmlFor="address" className="text-sm text-gray-700 block mb-1 font-medium">Address</label>
                                 <input
                                     type="text"
                                     id="address"
@@ -243,7 +243,7 @@ const Purchase = () => {
                                 </label>
                             </div>
                             <div>
-                                <label for="phone" className="text-sm text-gray-700 block mb-1 font-medium">Phone</label>
+                                <label htmlFor="phone" className="text-sm text-gray-700 block mb-1 font-medium">Phone</label>
                                 <input
                                     type="text"
                                     id="phone"

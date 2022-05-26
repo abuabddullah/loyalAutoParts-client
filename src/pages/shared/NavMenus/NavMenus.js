@@ -82,7 +82,7 @@ const NavMenus = () => {
                 </div>
                 {
                     pathName.includes('/dashBoard') && <div className="navbar-end  lg:hidden text-right">
-                        <label for="dashBoard-drawer" className="btn btn-ghost drawer-button text-xl"><FiMenu /></label>
+                        <label htmlFor="dashBoard-drawer" className="btn btn-ghost drawer-button text-xl"><FiMenu /></label>
                     </div>
                 }
 
