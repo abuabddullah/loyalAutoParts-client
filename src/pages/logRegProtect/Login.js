@@ -97,9 +97,11 @@ const Login = () => {
         }
     }, [user, regUser, setIsError, from, navigate]);
 
+
     if (loading || regLoading) {
         return <Loading />
     }
+
 
 
     return (
@@ -294,6 +296,13 @@ const Login = () => {
                 </div>
 
 
+            </div>
+            <div className='credential p-4 text-white w-1/3 rounded-lg fixed top-24 right-8'>
+                <h2 className="text-xl font-bold">
+                    Admin credentials
+                </h2>
+                <p>email : admin@admin.com <br />
+                    pass : adminadmin</p>
             </div>
         </div>
     );

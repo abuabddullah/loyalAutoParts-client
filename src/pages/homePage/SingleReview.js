@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SingleReview = ({review}) => {
+const SingleReview = ({ review }) => {
     const { name, email, review: reviewText, rate, photoURL } = review || {};
     return (
         <div className="flex max-w-md mb-3 mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
@@ -16,14 +16,21 @@ const SingleReview = ({review}) => {
                 <p className="mt-2 text-sm text-gray-600 dark:text-gray-400">{email}</p>
 
                 <div className="flex mt-2 item-center justify-center">
-                {
-                        [...Array(rate).keys()].map((pNum,index) => <svg 
-                        key={index}
-                        className="w-5 h-5 text-primary fill-current dark:text-gray-300" viewBox="0 0 24 24">
-                        <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
-                    </svg>)
+                    {
+                        [...Array(rate).keys()].map((pNum, index) => <svg
+                            key={index}
+                            className="w-5 h-5 text-primary fill-current dark:text-gray-300" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                        </svg>)
                     }
-                    
+                    {
+                        [...Array(5 - rate).keys()].map((pNum, index) => <svg
+                            key={index}
+                            className="w-5 h-5 text-base-300 fill-current dark:text-gray-300" viewBox="0 0 24 24">
+                            <path d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z" />
+                        </svg>)
+                    }
+
                 </div>
             </div>
         </div>

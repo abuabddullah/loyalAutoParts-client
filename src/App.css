@@ -61,9 +61,6 @@ input::-webkit-inner-spin-button {
 
 
 
-/* .reviewShadow {
-  border-radius: 0px;
-background: #e0e0e0;
-box-shadow:  6px 6px 35px #5a5a5a,
-             -6px -6px 35px #ffffff;
-} */
+.credential {
+  background: rgba(34, 197, 94, 0.26);
+}

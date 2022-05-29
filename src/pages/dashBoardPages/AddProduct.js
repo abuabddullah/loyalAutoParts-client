@@ -162,7 +162,7 @@ const AddProduct = () => {
                     <div className="space-x-4 mt-8">
                         <button
                             type="submit"
-                            className="py-2 px-4 bg-primary text-white rounded hover:bg-green-600 active:bg-green-700 disabled:opacity-50">Order</button>
+                            className="py-2 px-4 bg-primary text-white rounded hover:bg-green-600 active:bg-green-700 disabled:opacity-50">Add</button>
 
                         <button
                             onClick={() => reset()}
