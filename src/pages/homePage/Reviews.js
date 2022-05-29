@@ -23,7 +23,7 @@ const Reviews = () => {
                     <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-secondary">All Latest Reviews : {reversedReviews?.length}</h1>
                     <p className="lg:w-2/3 mx-auto leading-relaxed text-base">Reflection of our customer's satisfactions.</p>
                 </div>
-                <div className=" -m-4 text-center">
+                <div className="m-4 text-center pb-12">
 
 
                     {
