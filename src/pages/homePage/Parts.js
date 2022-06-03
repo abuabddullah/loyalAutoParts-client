@@ -17,7 +17,7 @@ const Parts = () => {
     const { isLoading, error, data: allParts, refetch } = useAllParts(intervalMs)
 
 
-    if (isLoading) {
+    if (isLoading || adminLoading) {
         return <Loading />
     }
 
