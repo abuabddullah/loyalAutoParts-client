@@ -14,7 +14,7 @@ const Summary = () => {
                 </div>
                 <div className="flex flex-wrap -m-4 text-center">
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                        <div className="border-2 border-primary px-4 py-6 rounded-lg">
+                        <div className="border-2 border-primary px-4 py-6 rounded-lg hover:shadow-md">
                             <GrDeliver
                                 className="w-12 h-12 mb-3 inline-block"
                             />
@@ -25,7 +25,7 @@ const Summary = () => {
                         </div>
                     </div>
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                        <div className="border-2 border-primary px-4 py-6 rounded-lg">
+                        <div className="border-2 border-primary px-4 py-6 rounded-lg hover:shadow-md">
                             <FaUserFriends
                                 className="w-12 h-12 mb-3 inline-block"
                             />
@@ -36,7 +36,7 @@ const Summary = () => {
                         </div>
                     </div>
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                        <div className="border-2 border-primary px-4 py-6 rounded-lg">
+                        <div className="border-2 border-primary px-4 py-6 rounded-lg hover:shadow-md">
                             <GiTakeMyMoney
                                 className="w-12 h-12 mb-3 inline-block"
                             />
@@ -47,7 +47,7 @@ const Summary = () => {
                         </div>
                     </div>
                     <div className="p-4 md:w-1/4 sm:w-1/2 w-full">
-                        <div className="border-2 border-primary px-4 py-6 rounded-lg">
+                        <div className="border-2 border-primary px-4 py-6 rounded-lg hover:shadow-md">
                             <GiAutoRepair
                                 className="w-12 h-12 mb-3 inline-block"
                             />

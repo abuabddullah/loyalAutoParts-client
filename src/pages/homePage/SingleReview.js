@@ -3,7 +3,7 @@ import React from 'react';
 const SingleReview = ({ review }) => {
     const { name, email, review: reviewText, rate, photoURL } = review || {};
     return (
-        <div className="flex max-w-md mb-3 mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
+        <div className="flex w-full mb-3 mx-auto overflow-hidden bg-white rounded-lg shadow-sm hover:shadow-lg dark:bg-gray-800 ">
             <div className="w-1/3 flex items-center justify-center">
                 <img
                     className='object-cover rounded-full w-24 h-24'
