@@ -11,7 +11,7 @@ const SinglePart = ({ part }) => {
     const [admin, setAdmin, adminLoading, setAdminLoading] = useAdmin(user);
     const { _id, name, image, description, minQty, availableQty, price } = part || {};
 
-    if (loading || adminLoading) {
+    if (loading) {
         return <Loading />
     }
 
