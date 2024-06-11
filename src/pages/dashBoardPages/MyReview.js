@@ -37,7 +37,7 @@ const MyReview = () => {
             photoURL: user.photoURL,
         }
         console.log(updateReview);
-        const url = `https://stark-chamber-79715.herokuapp.com/reviews/${email}`;
+        const url = `http://localhost:5000/reviews/${email}`;
         fetch(url, {
             method: 'PUT',
             body: JSON.stringify(updateReview),

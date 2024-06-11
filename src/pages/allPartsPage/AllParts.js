@@ -8,7 +8,6 @@ const AllParts = () => {
     const [intervalMs, setIntervalMs] = useState(1000)
     const { isLoading, error, data: allParts, refetch } = useAllParts(intervalMs)
 
-
     if (isLoading) {
         return <Loading />
     }

@@ -10,7 +10,7 @@ const AddProduct = () => {
     const onSubmit = (data) => {
         const partInfo = data;
         console.log(partInfo);
-        const url = `https://stark-chamber-79715.herokuapp.com/addProducts`;
+        const url = `http://localhost:5000/addProducts`;
 
         fetch(url, {
             method: 'POST',

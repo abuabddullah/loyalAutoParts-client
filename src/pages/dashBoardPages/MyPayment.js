@@ -27,7 +27,7 @@ const MyPayment = () => {
     const { _id } = useParams();
     const [intervalMs, setIntervalMs] = useState(1000);
     const { isLoading, error, data: order, refetch } = useQuery(['orders', _id], () =>
-        fetch(`https://stark-chamber-79715.herokuapp.com/orders/${_id}`, {
+        fetch(`http://localhost:5000/orders/${_id}`, {
             method: 'GET',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`,

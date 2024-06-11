@@ -2,7 +2,7 @@
 const createAccessToken = (email) => {
     const currentUser = { email: email };
     if (email) {
-        fetch(`https://stark-chamber-79715.herokuapp.com/login/${email}`, {
+        fetch(`http://localhost:5000/login/${email}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'

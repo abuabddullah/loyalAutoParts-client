@@ -10,6 +10,7 @@ const ManageAdmins = () => {
     const [admin, setAdmin, adminLoading, setAdminLoading] = useAdmin(user);
     const [intervalMs, setIntervalMs] = useState(1000);
     const { isLoading, error, data: allMembers, refetch } = useAllMembers(intervalMs);
+    console.log(allMembers);
 
 
     if (isLoading || adminLoading) {
@@ -24,7 +25,7 @@ const ManageAdmins = () => {
 
     const handleAdmin = (email) => {
         console.log(email);
-        fetch(`https://stark-chamber-79715.herokuapp.com/admin/${email}`, {
+        fetch(`http://localhost:5000/admin/${email}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

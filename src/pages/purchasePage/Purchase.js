@@ -86,7 +86,7 @@ const Purchase = () => {
 
 
         // add newest order to orders collection or update order price and qty if old order exists
-        const url = 'https://stark-chamber-79715.herokuapp.com/orders';
+        const url = 'http://localhost:5000/orders';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -111,7 +111,7 @@ const Purchase = () => {
 
 
         // update latest available qty in parts collection
-        const url2 = `https://stark-chamber-79715.herokuapp.com/parts/${id}`;
+        const url2 = `http://localhost:5000/parts/${id}`;
         fetch(url2, {
             method: 'PATCH',
             headers: {

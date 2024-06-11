@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 
 const useReview = (user,intervalMs) => {
     const { isLoading, error, data, refetch } = useQuery(['reviews', user,intervalMs], () =>
-        fetch(`https://stark-chamber-79715.herokuapp.com/reviews/${user?.email}`, {
+        fetch(`http://localhost:5000/reviews/${user?.email}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

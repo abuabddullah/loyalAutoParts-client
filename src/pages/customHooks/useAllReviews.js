@@ -3,7 +3,7 @@
 
 // const useAllReviews = (intervalMs) => {
 //     const { isLoading, error, data, refetch } = useQuery(['allReviews', intervalMs], () =>
-//         fetch(`https://stark-chamber-79715.herokuapp.com/reviews`)
+//         fetch(`http://localhost:5000/reviews`)
 //             .then(res =>
 //                 res.json()
 //             ),
@@ -25,7 +25,7 @@ import { useQuery } from 'react-query';
 
 const useAllReviews = (intervalMs,currentPage,perPageProducts) => {
     const { isLoading, error, data, refetch } = useQuery(['allReviews', intervalMs], () =>
-        fetch(`https://stark-chamber-79715.herokuapp.com/reviews?currentPage=${currentPage}&perPageProducts=${perPageProducts}`)
+        fetch(`http://localhost:5000/reviews?currentPage=${currentPage}&perPageProducts=${perPageProducts}`)
             .then(res =>
                 res.json()
             ),

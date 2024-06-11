@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 
 const useSinglePart = (id,user,intervalMs) => {
     const { isLoading, error, data: part, refetch } = useQuery(['parts', id, user,intervalMs], () =>
-        fetch(`https://stark-chamber-79715.herokuapp.com/parts/${id}`, {
+        fetch(`http://localhost:5000/parts/${id}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

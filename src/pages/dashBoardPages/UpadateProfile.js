@@ -24,7 +24,7 @@ console.log(user);
         const email = user.email;
         const updateUserInfo = data;
         // console.log("updateUserInfo",updateUserInfo,email);
-        const url = `https://stark-chamber-79715.herokuapp.com/members/${email}`;
+        const url = `http://localhost:5000/members/${email}`;
         fetch(url, {
             method: 'PUT',
             body: JSON.stringify(updateUserInfo),

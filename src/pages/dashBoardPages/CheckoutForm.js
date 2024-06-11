@@ -20,7 +20,7 @@ const CheckoutForm = ({ order }) => {
     const [clientSecret, setClientSecret] = useState("");
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
-        fetch("https://stark-chamber-79715.herokuapp.com/create-payment-intent", {
+        fetch("http://localhost:5000/create-payment-intent", {
             method: "POST",
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`,
@@ -93,7 +93,7 @@ const CheckoutForm = ({ order }) => {
                 appointment: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`https://stark-chamber-79715.herokuapp.com/payment/${_id}`, {
+            fetch(`http://localhost:5000/payment/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

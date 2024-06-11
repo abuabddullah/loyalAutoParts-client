@@ -9,7 +9,7 @@ const MyOrders = () => {
     const [user, loading, error4User] = useAuthState(auth);
     const [intervalMs, setIntervalMs] = useState(1000);
     const { isLoading, error, data: allOrders, refetch } = useQuery(['allorders', intervalMs], () =>
-        fetch(`https://stark-chamber-79715.herokuapp.com/orders?email=${user.email}`, {
+        fetch(`http://localhost:5000/orders?email=${user.email}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

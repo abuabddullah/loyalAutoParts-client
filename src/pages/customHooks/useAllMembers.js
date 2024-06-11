@@ -3,7 +3,7 @@ import { useQuery } from 'react-query';
 
 const useAllMembers = (intervalMs) => {
     const { isLoading, error, data, refetch } = useQuery(['allMembers', intervalMs], () =>
-        fetch(`https://stark-chamber-79715.herokuapp.com/members`, {
+        fetch(`http://localhost:5000/members`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

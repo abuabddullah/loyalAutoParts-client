@@ -72,7 +72,7 @@ const Reviews = () => {
 
     // get total product count from db and set total page
     useEffect(() => {
-        const url = `https://stark-chamber-79715.herokuapp.com/reviewsCount`;
+        const url = `http://localhost:5000/reviewsCount`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

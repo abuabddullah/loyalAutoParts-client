@@ -27,7 +27,7 @@ const UpadatePart = () => {
     const onSubmit = (data) => {
         const partInfo = data;
         console.log(partInfo);
-        const url = `https://stark-chamber-79715.herokuapp.com/manageProducts/${_id}`;
+        const url = `http://localhost:5000/manageProducts/${_id}`;
 
         fetch(url, {
             method: 'PUT',

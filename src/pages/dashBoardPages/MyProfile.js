@@ -13,7 +13,7 @@ const MyProfile = () => {
     // GET all availble non booked services by useQuery
     const [intervalMs, setIntervalMs] = useState(1000)
     const { isLoading, error, data: userMember, refetch } = useQuery(['allmembers', intervalMs], () =>
-        fetch(`https://stark-chamber-79715.herokuapp.com/members/${email}`, {
+        fetch(`http://localhost:5000/members/${email}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
