@@ -1,9 +1,8 @@
-import React from 'react';
 import { useQuery } from 'react-query';
 
 const useAllMembers = (intervalMs) => {
     const { isLoading, error, data, refetch } = useQuery(['allMembers', intervalMs], () =>
-        fetch(`http://localhost:5000/members`, {
+        fetch(`https://loyalautoparts-server.onrender.com/members`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

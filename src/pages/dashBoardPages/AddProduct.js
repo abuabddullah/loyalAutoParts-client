@@ -10,7 +10,7 @@ const AddProduct = () => {
     const onSubmit = (data) => {
         const partInfo = data;
         console.log(partInfo);
-        const url = `http://localhost:5000/addProducts`;
+        const url = `https://loyalautoparts-server.onrender.com/addProducts`;
 
         fetch(url, {
             method: 'POST',

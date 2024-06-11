@@ -3,7 +3,6 @@
 
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { AiFillStar } from "react-icons/ai";
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import useReview from '../customHooks/useReview';
@@ -37,7 +36,7 @@ const MyReview = () => {
             photoURL: user.photoURL,
         }
         console.log(updateReview);
-        const url = `http://localhost:5000/reviews/${email}`;
+        const url = `https://loyalautoparts-server.onrender.com/reviews/${email}`;
         fetch(url, {
             method: 'PUT',
             body: JSON.stringify(updateReview),

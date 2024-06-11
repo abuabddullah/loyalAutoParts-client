@@ -1,11 +1,10 @@
 
-import React, { useState } from 'react';
-import { useAuthState, useUpdateProfile } from 'react-firebase-hooks/auth';
+import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
-import Loading from '../shared/Loading/Loading';
 
 
 const UpadateProfile = () => {
@@ -24,7 +23,7 @@ console.log(user);
         const email = user.email;
         const updateUserInfo = data;
         // console.log("updateUserInfo",updateUserInfo,email);
-        const url = `http://localhost:5000/members/${email}`;
+        const url = `https://loyalautoparts-server.onrender.com/members/${email}`;
         fetch(url, {
             method: 'PUT',
             body: JSON.stringify(updateUserInfo),

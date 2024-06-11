@@ -17,7 +17,7 @@ const ConfirmDeleteModal = ({ _id, setActiveModal, setId }) => {
 
     const handleDelete = () => {
         console.log(_id);
-        fetch(`http://localhost:5000/deleteProducts/${_id}`, {
+        fetch(`https://loyalautoparts-server.onrender.com/deleteProducts/${_id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json',

@@ -72,7 +72,7 @@ const Reviews = () => {
 
     // get total product count from db and set total page
     useEffect(() => {
-        const url = `http://localhost:5000/reviewsCount`;
+        const url = `https://loyalautoparts-server.onrender.com/reviewsCount`;
         fetch(url)
             .then(res => res.json())
             .then(data => {

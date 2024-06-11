@@ -1,11 +1,10 @@
 
-import React, { useEffect, useState } from 'react';
 import {
     CardElement,
-    Elements,
-    useStripe,
     useElements,
+    useStripe
 } from '@stripe/react-stripe-js';
+import React, { useEffect, useState } from 'react';
 
 const CheckoutForm = ({ order }) => {
     const stripe = useStripe();
@@ -20,7 +19,7 @@ const CheckoutForm = ({ order }) => {
     const [clientSecret, setClientSecret] = useState("");
     useEffect(() => {
         // Create PaymentIntent as soon as the page loads
-        fetch("http://localhost:5000/create-payment-intent", {
+        fetch("https://loyalautoparts-server.onrender.com/create-payment-intent", {
             method: "POST",
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`,
@@ -93,7 +92,7 @@ const CheckoutForm = ({ order }) => {
                 appointment: _id,
                 transactionId: paymentIntent.id
             }
-            fetch(`http://localhost:5000/payment/${_id}`, {
+            fetch(`https://loyalautoparts-server.onrender.com/payment/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

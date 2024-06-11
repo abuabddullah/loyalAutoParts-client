@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useQuery } from 'react-query';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import useAdmin from '../customHooks/useAdmin';
 import Loading from '../shared/Loading/Loading';
@@ -13,7 +13,7 @@ const MyProfile = () => {
     // GET all availble non booked services by useQuery
     const [intervalMs, setIntervalMs] = useState(1000)
     const { isLoading, error, data: userMember, refetch } = useQuery(['allmembers', intervalMs], () =>
-        fetch(`http://localhost:5000/members/${email}`, {
+        fetch(`https://loyalautoparts-server.onrender.com/members/${email}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

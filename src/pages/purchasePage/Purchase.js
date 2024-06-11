@@ -2,8 +2,7 @@
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useForm } from 'react-hook-form';
-import { useQuery } from 'react-query';
-import { Link, useLocation, useNavigate, useParams } from 'react-router-dom';
+import { useLocation, useNavigate, useParams } from 'react-router-dom';
 import { toast } from 'react-toastify';
 import auth from '../../firebase.init';
 import useSinglePart from '../customHooks/useSinglePart';
@@ -86,7 +85,7 @@ const Purchase = () => {
 
 
         // add newest order to orders collection or update order price and qty if old order exists
-        const url = 'http://localhost:5000/orders';
+        const url = 'https://loyalautoparts-server.onrender.com/orders';
         fetch(url, {
             method: 'POST',
             headers: {
@@ -111,7 +110,7 @@ const Purchase = () => {
 
 
         // update latest available qty in parts collection
-        const url2 = `http://localhost:5000/parts/${id}`;
+        const url2 = `https://loyalautoparts-server.onrender.com/parts/${id}`;
         fetch(url2, {
             method: 'PATCH',
             headers: {

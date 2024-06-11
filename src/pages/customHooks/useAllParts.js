@@ -1,9 +1,8 @@
-import React from 'react';
 import { useQuery } from 'react-query';
 
 const useAllParts = (intervalMs) => {
     const { isLoading, error, data, refetch } = useQuery(['allParts', intervalMs], () =>
-        fetch(`http://localhost:5000/parts`)
+        fetch(`https://loyalautoparts-server.onrender.com/parts`)
             .then(res =>
                 res.json()
             ),

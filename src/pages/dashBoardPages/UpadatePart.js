@@ -27,7 +27,7 @@ const UpadatePart = () => {
     const onSubmit = (data) => {
         const partInfo = data;
         console.log(partInfo);
-        const url = `http://localhost:5000/manageProducts/${_id}`;
+        const url = `https://loyalautoparts-server.onrender.com/manageProducts/${_id}`;
 
         fetch(url, {
             method: 'PUT',

@@ -25,7 +25,7 @@ const ManageAdmins = () => {
 
     const handleAdmin = (email) => {
         console.log(email);
-        fetch(`http://localhost:5000/admin/${email}`, {
+        fetch(`https://loyalautoparts-server.onrender.com/admin/${email}`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json',

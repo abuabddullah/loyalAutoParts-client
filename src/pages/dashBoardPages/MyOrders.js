@@ -9,7 +9,7 @@ const MyOrders = () => {
     const [user, loading, error4User] = useAuthState(auth);
     const [intervalMs, setIntervalMs] = useState(1000);
     const { isLoading, error, data: allOrders, refetch } = useQuery(['allorders', intervalMs], () =>
-        fetch(`http://localhost:5000/orders?email=${user.email}`, {
+        fetch(`https://loyalautoparts-server.onrender.com/orders?email=${user.email}`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',

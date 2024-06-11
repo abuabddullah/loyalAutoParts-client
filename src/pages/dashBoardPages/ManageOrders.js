@@ -16,7 +16,7 @@ const MySwal = withReactContent(Swal)
 const ManageOrders = () => {
     const [intervalMs, setIntervalMs] = useState(1000)
     const { isLoading, error, data: allOrders, refetch } = useQuery(['allOrders', intervalMs], () =>
-        fetch(`http://localhost:5000/allOrders`, {
+        fetch(`https://loyalautoparts-server.onrender.com/allOrders`, {
             method: 'GET',
             headers: {
                 'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ const ManageOrders = () => {
 
 
                 console.log(id);
-                fetch(`http://localhost:5000/allOrders/${id}`, {
+                fetch(`https://loyalautoparts-server.onrender.com/allOrders/${id}`, {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json',
@@ -110,7 +110,7 @@ const ManageOrders = () => {
 
 
     const handleShiping = (id) => {
-        fetch(`http://localhost:5000/allOrders/${id}`, {
+        fetch(`https://loyalautoparts-server.onrender.com/allOrders/${id}`, {
             method: 'PATCH',
             headers: {
                 'Content-Type': 'application/json',

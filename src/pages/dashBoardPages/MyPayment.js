@@ -3,17 +3,14 @@
 
 
 
+import {
+    Elements
+} from '@stripe/react-stripe-js';
+import { loadStripe } from '@stripe/stripe-js';
 import React, { useState } from 'react';
 import { useQuery } from 'react-query';
 import { useParams } from 'react-router-dom';
 import Loading from '../shared/Loading/Loading';
-import { loadStripe } from '@stripe/stripe-js';
-import {
-  CardElement,
-  Elements,
-  useStripe,
-  useElements,
-} from '@stripe/react-stripe-js';
 import CheckoutForm from './CheckoutForm';
 
 
@@ -27,7 +24,7 @@ const MyPayment = () => {
     const { _id } = useParams();
     const [intervalMs, setIntervalMs] = useState(1000);
     const { isLoading, error, data: order, refetch } = useQuery(['orders', _id], () =>
-        fetch(`http://localhost:5000/orders/${_id}`, {
+        fetch(`https://loyalautoparts-server.onrender.com/orders/${_id}`, {
             method: 'GET',
             headers: {
                 'authorization': `Bearer ${localStorage.getItem('accessToken')}`,

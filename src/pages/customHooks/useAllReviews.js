@@ -3,7 +3,7 @@
 
 // const useAllReviews = (intervalMs) => {
 //     const { isLoading, error, data, refetch } = useQuery(['allReviews', intervalMs], () =>
-//         fetch(`http://localhost:5000/reviews`)
+//         fetch(`https://loyalautoparts-server.onrender.com/reviews`)
 //             .then(res =>
 //                 res.json()
 //             ),
@@ -20,12 +20,11 @@
 
 
 
-import React from 'react';
 import { useQuery } from 'react-query';
 
 const useAllReviews = (intervalMs,currentPage,perPageProducts) => {
     const { isLoading, error, data, refetch } = useQuery(['allReviews', intervalMs], () =>
-        fetch(`http://localhost:5000/reviews?currentPage=${currentPage}&perPageProducts=${perPageProducts}`)
+        fetch(`https://loyalautoparts-server.onrender.com/reviews?currentPage=${currentPage}&perPageProducts=${perPageProducts}`)
             .then(res =>
                 res.json()
             ),
