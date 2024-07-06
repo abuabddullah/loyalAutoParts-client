@@ -1,7 +1,7 @@
 # Welcome to **Loyal Auto Parts**
 
 Project Repo Link(Frontend): [https://github.com/programming-hero-web-course1/manufacturer-website-client-side-abuabddullah](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-abuabddullah) \
-Live Site link(Frontend): [https://loyalcars12.web.app/](https://loyalcars12.web.app/)
+Live Site link(Frontend): [https://loyalautoparts.netlify.app/](https://loyalautoparts.netlify.app/)
 
 Project Repo Link(Backend): [https://github.com/programming-hero-web-course1/manufacturer-website-server-side-abuabddullah](https://github.com/programming-hero-web-course1/manufacturer-website-server-side-abuabddullah) \
 Live Site link(Backend): [https://loyalautoparts-server.onrender.com/](https://loyalautoparts-server.onrender.com/)
@@ -59,10 +59,3 @@ https://i.ibb.co/CVpKnL1/Cars-Differential.jpg\
 https://i.ibb.co/jyb0mYR/Cars-Engine.jpg\
 https://i.ibb.co/3cXTsC3/Cars-Gearings.jpg\
 https://i.ibb.co/F7XhRYp/Cars-Steering.jpg
-
-
-
-
-
-
-
